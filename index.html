@@ -4,13 +4,79 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>Amanda Phillips</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
 </head>
 
 <body>
-
+  <header class="navigation">
+    <div class="full-width nav-container">
+      <div class="half-width">
+        <h1 class="logo-heading">AP</h1>
+      </div>
+      <div class="half-width">
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="about">About</a>
+          <a href="projects">Projects</a>
+          <a href="contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="full-width main">
+    <header class="intro">
+      <h1>Hi! My name is <span>Amanda Phillips</span></h1>
+      <img src="img/amanda.jpg" alt="Image of Amanda Phillips" />
+    </header>
+    <section class="full-width about">
+      <h2>A little bit about me</h2>
+      <div class="half-width">
+        <p>
+          My current tech stack is focused on MERN (Mongo, Express, React, Node), however I do like to dabble in
+          Python/Django. I also thoroughly enjoy a good challenge of learning new languages, in which I have a few
+          lined up.
+        </p>
+      </div>
+      <div class="half-width">
+        <p>
+          When I'm not coding, I enjoy reading, solving puzzles (like sudoku), playing video games (mainly RPGS), and
+          spending time with my family, which is extremely important to me. I also enjoy a nice cup of coffee (or five)
+          on a daily basis.
+        </p>
+      </div>
+    </section>
+    <section class="full-width projects">
+      <h2>Project Spotlight</h2>
+      <div class="half-width project">
+        <img src="img/brawndo-sc.png" alt="Screenshot of Brawndo.app" />
+        <ul class="project-specs">
+          <li>Brawndo is a weightlifting journal that allows a user to manage their workout routines, schedule
+            workouts, and review
+            personal progress</li>
+          <li>MERN stack app built with a group of 4. My primary role was implementing the front and back end
+            interaction with
+            external APIs such as SendGrid and Stripe. I also built out standard user settings on the front and back
+            ends.</li>
+          <li>Tech Used: mongoDB(deployed on mLab), Express, Node, SendGrid, Stripe, bcrypt, React, Redux, Axios,
+            BootStrap(ReactStrap)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="full-width contact">
+      <h2>Like what you see?</h2>
+      <div class="half-width contact-info">
+        <a href="mailto:amanda@phillipsdev.me"> <img src="img/icon-envelope.png" alt="Envelope" />amanda [@]
+          phillipsdev.me</a>
+        <a href="https://www.linkedin.com/in/phillipsama/" target="_blank"><img src="img/icon-linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/phillipdev" target="_blank"><img src="img/icon-github.png" alt="GitHub" /></a>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>&copy; phillipsdev 2018</p>
+  </footer>
 </body>
 
 </html>

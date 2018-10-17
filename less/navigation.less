@@ -1,0 +1,36 @@
+.navigation {
+  width: 100%;
+  height: 70px;
+  background: @heidelberg;
+  position: fixed;
+
+  .nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid black;
+
+    .logo-heading {
+      padding: 10px;
+      font-family: @audiowide;
+      font-size: 4rem;
+      color: @white;
+      span:last-child {
+        margin: 0 0 0 -11px;
+      }
+
+      @media @mobile {
+        font-size: 2rem;
+        span:last-child {
+          margin: 0 0 0 -6px;
+        }
+      }
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

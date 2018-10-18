@@ -146,13 +146,18 @@ body {
   height: 70px;
   background: #9a031e;
   position: fixed;
+  box-shadow: 0px 3px 10px #011627;
+}
+@media (max-width: 500px) {
+  .navigation {
+    height: 50px;
+  }
 }
 .navigation .nav-container {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
 }
 .navigation .nav-container .logo-heading {
   padding: 10px;
@@ -165,15 +170,36 @@ body {
 }
 @media (max-width: 500px) {
   .navigation .nav-container .logo-heading {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .navigation .nav-container .logo-heading span:last-child {
     margin: 0 0 0 -6px;
   }
 }
 .navigation .nav-container .nav {
+  width: 350px;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .navigation .nav-container .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.navigation .nav-container .nav .nav-link {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.6rem;
+  color: #fffbff;
+  text-decoration: none;
+}
+.navigation .nav-container .nav .nav-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .navigation .nav-container .nav .nav-link {
+    font-size: 1.4rem;
+  }
 }
 .main {
   padding: 90px 0;

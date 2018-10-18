@@ -366,11 +366,22 @@ img {
   color: #9a031e;
   font-weight: 500;
 }
+.main .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
 .main .contact .contact-info {
-  height: 200px;
-  width: 400px;
+  width: 260px;
   border-radius: 25px;
   background: #216869;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0 0 0;
 }
 .main .contact .contact-info p {
   color: #fffbff;

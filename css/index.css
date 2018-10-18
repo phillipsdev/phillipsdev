@@ -261,7 +261,7 @@ img {
   }
 }
 .main {
-  padding: 90px 10px;
+  padding: 90px 10px 20px 10px;
 }
 .main .intro {
   width: 100%;

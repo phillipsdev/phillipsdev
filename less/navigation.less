@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 3px solid black;
+    border: 1px solid black;
 
     .logo-heading {
       padding: 10px;
@@ -19,18 +19,20 @@
       span:last-child {
         margin: 0 0 0 -11px;
       }
-
-      @media @mobile {
-        font-size: 2rem;
-        span:last-child {
-          margin: 0 0 0 -6px;
-        }
-      }
     }
 
     .nav {
       display: flex;
       justify-content: space-evenly;
+    }
+
+    @media @mobile {
+      .logo-heading {
+        font-size: 2rem;
+        span:last-child {
+          margin: 0 0 0 -6px;
+        }
+      }
     }
   }
 }

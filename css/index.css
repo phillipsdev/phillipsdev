@@ -134,14 +134,12 @@ html {
 }
 html,
 body {
-  max-width: 1000px;
+  font-family: "Roboto", sans-serif;
 }
-.full-width {
+.container {
   width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-}
-.half-width {
-  width: 50%;
 }
 .navigation {
   width: 100%;
@@ -154,7 +152,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 .navigation .nav-container .logo-heading {
   padding: 10px;
@@ -165,17 +163,17 @@ body {
 .navigation .nav-container .logo-heading span:last-child {
   margin: 0 0 0 -11px;
 }
-@media (max-width: 500px) {
+.navigation .nav-container .nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 500px) {
   .navigation .nav-container .logo-heading {
     font-size: 2rem;
   }
   .navigation .nav-container .logo-heading span:last-child {
     margin: 0 0 0 -6px;
   }
-}
-.navigation .nav-container .nav {
-  display: flex;
-  justify-content: space-evenly;
 }
 .main {
   padding: 90px 0;

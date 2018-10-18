@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
+  background: #e7e5e5;
 }
 h1,
 h2,
@@ -144,15 +145,34 @@ h4 {
 }
 h1 {
   font-size: 4rem;
+  color: #216869;
 }
 h2 {
   font-size: 3rem;
+  color: #216869;
 }
 h3 {
   font-size: 2.5rem;
+  color: #9a031e;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #fffbff;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #011627;
+}
+li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #011627;
+}
+a {
+  font-size: 1.6rem;
+  color: #fffbff;
+  text-decoration: none;
 }
 .container {
   width: 100%;

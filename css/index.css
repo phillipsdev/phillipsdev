@@ -139,9 +139,9 @@ body {
 }
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
 }
 h1 {
   font-size: 4rem;
@@ -156,6 +156,7 @@ h3 {
   color: #9a031e;
 }
 h4 {
+  font-family: "Shadows Into Light", cursive;
   font-size: 2rem;
   color: #fffbff;
 }
@@ -173,6 +174,10 @@ a {
   font-size: 1.6rem;
   color: #fffbff;
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .container {
   width: 100%;
@@ -256,15 +261,117 @@ a {
   }
 }
 .main {
-  padding: 90px 0;
+  padding: 90px 10px;
 }
-.main .intro img {
-  width: 25%;
+.main .intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main .intro {
+    flex-direction: column;
+  }
+}
+.main .intro .text-content {
+  margin: 0 20px;
+}
+.main .intro .text-content span {
+  color: #9a031e;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .main .intro .text-content {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .main .intro .text-content h1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main .intro .img-content {
+  margin: 0 20px;
+}
+@media (max-width: 500px) {
+  .main .intro .img-content {
+    margin: 10px 20px;
+  }
+}
+.main .intro .img-content img {
+  width: 200px;
   border-radius: 50%;
+  border: 3px outset #011627;
 }
-.main .projects .project img {
-  width: 90%;
+.main .about {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+@media (max-width: 500px) {
+  .main .about {
+    text-align: center;
+  }
+}
+.main .about .about-content {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .main .about .about-content {
+    flex-direction: column;
+    text-align: justify;
+  }
+}
+.main .about .about-content .about-text {
+  margin: 10px 10px;
+}
+@media (max-width: 500px) {
+  .main .projects {
+    text-align: center;
+  }
+}
+.main .projects .project {
+  display: flex;
+  flex-direction: column;
+}
+.main .projects .project .project-display {
+  margin: 20px 0;
+  width: 80%;
+  align-self: center;
+}
+.main .projects .project .project-specs {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main .projects .project .project-specs {
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main .projects .project .project-specs .spec-item {
+  width: 30%;
+  margin: 0 10px;
+}
+@media (max-width: 500px) {
+  .main .projects .project .project-specs .spec-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+.main .projects .project .project-specs .spec-item span {
+  color: #9a031e;
+  font-weight: 500;
 }
 .main .contact .contact-info {
+  height: 200px;
+  width: 400px;
+  border-radius: 25px;
   background: #216869;
+}
+.main .contact .contact-info p {
+  color: #fffbff;
 }

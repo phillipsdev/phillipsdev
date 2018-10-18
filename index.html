@@ -24,51 +24,64 @@
   </header>
   <div class="container main">
     <header class="intro">
-      <h1>Hi! My name is <span>Amanda Phillips</span></h1>
-      <img src="img/amanda.jpg" alt="Image of Amanda Phillips" />
+      <div class="text-content">
+        <h1>Hi! My name is <span>Amanda Phillips</span> </h1>
+        <h2>I'm a Full Stack Web Developer</h2>
+      </div>
+      <div class="img-content">
+        <img src="img/amanda.jpg" alt="Image of Amanda Phillips" />
+      </div>
     </header>
     <section class="about" id="about">
       <h2>A little bit about me</h2>
-      <div class="content">
-        <p>
-          My current tech stack is focused on MERN (Mongo, Express, React, Node), however I do like to dabble in
-          Python/Django. I also thoroughly enjoy a good challenge of learning new languages, in which I have a few
-          lined up.
-        </p>
-      </div>
-      <div class="content">
-        <p>
-          When I'm not coding, I enjoy reading, solving puzzles (like sudoku), playing video games (mainly RPGS), and
-          spending time with my family, which is extremely important to me. I also enjoy a nice cup of coffee (or five)
-          on a daily basis.
-        </p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            My current tech stack is focused on MERN (Mongo, Express, React, Node), however I do like to dabble in
+            Python/Django. I also thoroughly enjoy a good challenge of learning new languages, in which I have a few
+            lined up.
+          </p>
+        </div>
+        <div class="about-text">
+          <p>
+            When I'm not coding, I enjoy reading, solving puzzles (like sudoku), playing video games (mainly RPGS), and
+            spending time with my family, which is extremely important to me. I also enjoy a nice cup of coffee (or
+            five) on a daily basis.
+          </p>
+        </div>
       </div>
     </section>
     <section class="projects" id="projects">
       <!-- TODO: Make this a carousel that can scroll through all projects that I will eventually have (Self made or Bootsrap??)-->
       <h2>Project Spotlight</h2>
       <div class="project">
-        <img src="img/brawndo-sc.png" alt="Screenshot of Brawndo.app" />
-        <ul class="project-specs">
-          <li>Brawndo is a weightlifting journal that allows a user to manage their workout routines, schedule
-            workouts, and review
-            personal progress</li>
-          <li>MERN stack app built with a group of 4. My primary role was implementing the front and back end
-            interaction with
-            external APIs such as SendGrid and Stripe. I also built out standard user settings on the front and back
-            ends.</li>
-          <li>Tech Used: mongoDB(deployed on mLab), Express, Node, SendGrid, Stripe, bcrypt, React, Redux, Axios,
-            BootStrap(ReactStrap)</li>
-        </ul>
+        <img src="img/brawndo-sc.png" alt="Screenshot of Brawndo.app" class="project-display" />
+        <div class="project-specs">
+          <p class="spec-item">Brawndo is a weightlifting journal that allows a user to manage their workout routines,
+            schedule
+            workouts, and review personal progress</p>
+          <p class="spec-item">MERN stack app built with a group of 4, including myself. My primary role was
+            implementing the front and
+            back end interaction with external APIs such as SendGrid and Stripe. I also built out standard user
+            settings on the front and back ends.</p>
+          <p class="spec-item"><span>Tech Used: </span>mongoDB(deployed on mLab), Express, Node, React, Redux, Axios,
+            SendGrid, Stripe, bcrypt</p>
+        </div>
       </div>
     </section>
     <section class="contact" id="contact">
       <h3>Like what you see?</h3>
       <div class="contact-info">
-        <a href="mailto:amanda@phillipsdev.me"> <img src="img/icon-envelope.png" alt="Envelope" />amanda [@]
-          phillipsdev.me</a>
-        <a href="https://www.linkedin.com/in/phillipsama/" target="_blank"><img src="img/icon-linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://github.com/phillipdev" target="_blank"><img src="img/icon-github.png" alt="GitHub" /></a>
+        <p>Send me an email at: <a href="mailto:amanda@phillipsdev.me">amanda@phillipsdev.me <img src="img/icon-envelope.png"
+              alt="Envelope" /></a></p>
+        <p>
+          Connect on LinkedIn --> <a href="https://www.linkedin.com/in/phillipsama/" target="_blank"><img src="img/icon-linkedin.png"
+              alt="LinkedIn" /></a>
+        </p>
+        <p>
+          Check out my GitHub --> <a href="https://github.com/phillipdev" target="_blank"><img src="img/icon-github.png"
+              alt="GitHub" /></a>
+        </p>
       </div>
     </section>
   </div>

@@ -361,6 +361,12 @@ img {
     margin: 10px 0;
   }
 }
+.main .projects .project .project-specs .spec-item a {
+  color: #9a031e;
+}
+.main .projects .project .project-specs .spec-item a:hover {
+  text-decoration: underline;
+}
 .main .projects .project .project-specs .spec-item span {
   color: #9a031e;
   font-weight: 500;

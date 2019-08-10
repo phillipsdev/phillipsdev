@@ -1,95 +1,125 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Amanda Phillips</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/index.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide|Roboto|Shadows+Into+Light"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/aplogosmalltest.jpg" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Amanda Phillips</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
-  <link href="https://fonts.googleapis.com/css?family=Audiowide|Roboto|Shadows+Into+Light" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="img/aplogosmalltest.jpg" />
-</head>
-
-<body>
-  <header class="navigation">
-    <div class="container nav-container">
-      <h1 class="logo-heading"><span>A</span><span>P</span></h1>
-      <nav class="nav">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <div class="container main">
-    <header class="intro">
-      <div class="text-content">
-        <h1>Hi! My name is <span>Amanda Phillips</span> </h1>
-        <h2>I'm a Full Stack Web Developer</h2>
-      </div>
-      <div class="img-content">
-        <img src="img/amanda.jpg" alt="Image of Amanda Phillips" />
+  <body>
+    <header class="navigation">
+      <div class="container nav-container">
+        <h1 class="logo-heading"><span>A</span><span>P</span></h1>
+        <nav class="nav">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
       </div>
     </header>
-    <section class="about" id="about">
-      <h2>A little bit about me</h2>
-      <div class="about-content">
-        <div class="about-text">
+    <div class="container main">
+      <header class="intro">
+        <div class="text-content">
+          <h1>Hi! My name is <span>Amanda Phillips</span></h1>
+          <h2>I'm a Full Stack Web Developer</h2>
+        </div>
+        <div class="img-content">
+          <img src="img/amanda.jpg" alt="Image of Amanda Phillips" />
+        </div>
+      </header>
+      <section class="about" id="about">
+        <h2>A little bit about me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              My current tech stack is focused on MERN (Mongo, Express, React,
+              Node), however I do like to dabble in Python/Django. I also
+              thoroughly enjoy a good challenge of learning new languages, in
+              which I have a few lined up.
+            </p>
+          </div>
+          <div class="about-text">
+            <p>
+              When I'm not coding, I enjoy reading, solving puzzles (like
+              sudoku), playing video games (mainly RPGS), and spending time with
+              my family, which is extremely important to me. I also enjoy a nice
+              cup of coffee (or five) on a daily basis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <!-- TODO: Make this a carousel that can scroll through all projects that I will eventually have (Self made or Bootsrap??)-->
+        <h2>Project Spotlight</h2>
+        <div class="project">
+          <a
+            class="project-display"
+            href="https://github.com/Lambda-School-Labs/CS10-workout-tracker"
+            target="_blank"
+          >
+            <img src="img/brawndo-sc.png" alt="Screenshot of Brawndo.app"
+          /></a>
+          <div class="project-specs">
+            <p class="spec-item">
+              <a
+                href="https://github.com/Lambda-School-Labs/CS10-workout-tracker"
+                target="_blank"
+                >Brawndo</a
+              >
+              is a weightlifting journal that allows a user to manage their
+              workout routines, schedule workouts, and review personal progress
+            </p>
+            <p class="spec-item">
+              MERN stack app built with a group of 4, including myself. My
+              primary role was implementing the front and back end interaction
+              with external APIs such as SendGrid and Stripe. I also built out
+              standard user settings on the front and back ends.
+            </p>
+            <p class="spec-item">
+              <span>Tech Used: </span>mongoDB(deployed on mLab), Express, Node,
+              React, Redux, Axios, SendGrid, Stripe, bcrypt
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h3>Like what you see?</h3>
+        <div class="contact-info">
           <p>
-            My current tech stack is focused on MERN (Mongo, Express, React, Node), however I do like to dabble in
-            Python/Django. I also thoroughly enjoy a good challenge of learning new languages, in which I have a few
-            lined up.
+            <a href="mailto:amanda@phillipsdev.me"
+              >amanda@phillipsdev.me
+              <img src="img/icon-envelope.png" alt="Envelope"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/phillipsama/" target="_blank"
+              >Connect on LinkedIn
+              <img src="img/icon-linkedin.png" alt="LinkedIn"
+            /></a>
+          </p>
+          <p>
+            <a href="https://github.com/phillipdev" target="_blank"
+              >Check out my GitHub <img src="img/icon-github.png" alt="GitHub"
+            /></a>
           </p>
         </div>
-        <div class="about-text">
-          <p>
-            When I'm not coding, I enjoy reading, solving puzzles (like sudoku), playing video games (mainly RPGS), and
-            spending time with my family, which is extremely important to me. I also enjoy a nice cup of coffee (or
-            five) on a daily basis.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="projects" id="projects">
-      <!-- TODO: Make this a carousel that can scroll through all projects that I will eventually have (Self made or Bootsrap??)-->
-      <h2>Project Spotlight</h2>
-      <div class="project">
-        <a class="project-display" href="https://github.com/Lambda-School-Labs/CS10-workout-tracker" target="_blank">
-          <img src="img/brawndo-sc.png" alt="Screenshot of Brawndo.app" /></a>
-        <div class="project-specs">
-          <p class="spec-item">
-            <a href="https://github.com/Lambda-School-Labs/CS10-workout-tracker" target="_blank">Brawndo</a>
-            is a weightlifting journal that allows a user to manage their workout routines, schedule workouts, and
-            review personal progress</p>
-          <p class="spec-item">MERN stack app built with a group of 4, including myself. My primary role was
-            implementing the front and
-            back end interaction with external APIs such as SendGrid and Stripe. I also built out standard user
-            settings on the front and back ends.</p>
-          <p class="spec-item"><span>Tech Used: </span>mongoDB(deployed on mLab), Express, Node, React, Redux, Axios,
-            SendGrid, Stripe, bcrypt</p>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <h3>Like what you see?</h3>
-      <div class="contact-info">
-        <p>
-          <a href="mailto:amanda@phillipsdev.me">amanda@phillipsdev.me <img src="img/icon-envelope.png" alt="Envelope" /></a></p>
-        <p>
-          <a href="https://www.linkedin.com/in/phillipsama/" target="_blank">Connect on LinkedIn <img src="img/icon-linkedin.png"
-              alt="LinkedIn" /></a>
-        </p>
-        <p><a href="https://github.com/phillipdev" target="_blank">Check out my GitHub <img src="img/icon-github.png"
-              alt="GitHub" /></a>
-        </p>
-      </div>
-    </section>
-  </div>
-  <footer class="footer">
-    <h4>&copy; 2018 phillipsdev</h4>
-  </footer>
-</body>
-
+      </section>
+    </div>
+    <footer class="footer">
+      <h4>&copy; 2018 phillipsdev</h4>
+    </footer>
+  </body>
 </html>
